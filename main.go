@@ -3,8 +3,9 @@ package main
 import(
 	"os"
 	"log"
+	"fmt"
 
-	"torrentfile"
+	"github.com/ShriramShagrir/torrent-client/torrentfile"
 )
 
 func main(){
@@ -16,4 +17,5 @@ func main(){
 	if err != nil {
 		log.fatal(err)
 	}
+	tf.print()
 }
